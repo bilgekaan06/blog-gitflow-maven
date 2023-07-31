@@ -13,7 +13,7 @@
                 <version>1.20.0</version>
                 <configuration>
                     <!-- we use maven wrapper instead of maven installation -->
-                    <mvnExecutable>./mvn</mvnExecutable>
+                    <mvnExecutable>mvn</mvnExecutable>
 
                     <!-- don't push to remote, since we want to try things out locally -->
                     <pushRemote>false</pushRemote>
