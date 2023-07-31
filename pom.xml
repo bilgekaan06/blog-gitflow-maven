@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.viesure</groupId>
     <artifactId>gitlab-flow-example</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -16,7 +16,7 @@
                     <mvnExecutable>mvn</mvnExecutable>
 
                     <!-- don't push to remote, since we want to try things out locally -->
-                    <pushRemote>false</pushRemote>
+                    <pushRemote>true</pushRemote>
 
                     <!-- we use major.minor.patch versioning, being 0.1.2 respectively.
                          By default the minor version is increased.
@@ -27,6 +27,7 @@
                         <productionBranch>master</productionBranch>
                         <!-- default is develop, but we use development -->
                         <developmentBranch>development</developmentBranch>
+                        <releaseBranchPrefix>release/</releaseBranchPrefix>
                     </gitFlowConfig>
                 </configuration>
             </plugin>
