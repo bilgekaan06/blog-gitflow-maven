@@ -10,10 +10,10 @@
             <plugin>
                 <groupId>com.amashchenko.maven.plugin</groupId>
                 <artifactId>gitflow-maven-plugin</artifactId>
-                <version>1.13.0</version>
+                <version>1.20.0</version>
                 <configuration>
                     <!-- we use maven wrapper instead of maven installation -->
-                    <mvnExecutable>./mvnw</mvnExecutable>
+                    <mvnExecutable>./mvn</mvnExecutable>
 
                     <!-- don't push to remote, since we want to try things out locally -->
                     <pushRemote>false</pushRemote>
