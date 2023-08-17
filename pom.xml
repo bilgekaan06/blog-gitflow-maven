@@ -3,8 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.viesure</groupId>
     <artifactId>gitlab-flow-example</artifactId>
-    <version>1.1.1-SNAPSHOT</version>
-
+    <version>1.2.0-SNAPSHOT</version>
+    <scm>
+        <developerConnection>
+            scm:git:git@github.com:bilgekaan06/blog-gitflow-maven.git
+        </developerConnection>
+    </scm>
     <build>
         <plugins>
             <plugin>
@@ -22,7 +26,6 @@
                          By default the minor version is increased.
                          Hotfixes increase the patch version. -->
                     <versionDigitToIncrement>${gitflowDigitToIncrement}</versionDigitToIncrement>
-
                     <gitFlowConfig>
                         <productionBranch>master</productionBranch>
                         <!-- default is develop, but we use development -->
